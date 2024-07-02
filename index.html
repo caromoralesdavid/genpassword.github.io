@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseñas</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Generador de Contraseñas</h2>
+        <div class="form-group">
+            <label for="length">Longitud de la contraseña:</label>
+            <input type="number" id="length" min="1" value="12">
+        </div>
+        <div class="form-group">
+            <label><input type="checkbox" id="include-letters" checked> Incluir Letras</label>
+        </div>
+        <div class="form-group">
+            <label><input type="checkbox" id="include-numbers" checked> Incluir Números</label>
+        </div>
+        <div class="form-group">
+            <label><input type="checkbox" id="include-specials"> Incluir Caracteres Especiales</label>
+        </div>
+        <button id="generate-btn">Generar Contraseña</button>
+        <div class="result">
+            <input type="text" id="password" readonly>
+            <button id="copy-btn">
+                <img src="https://img.icons8.com/?size=100&id=11911&format=png&color=000000" alt="Copy">
+            </button>
+        </div>
+        <p id="copy-message" class="hidden">Copiado con éxito</p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
